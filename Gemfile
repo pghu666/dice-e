@@ -16,6 +16,11 @@ gem 'rails_12factor', group: :production
 # use boodtrap for mibae
 gem 'bootstrap-sass'
 
+#Use stripe for ecommerce payments
+gem 'stripe', '~> 1.36'
+
+gem 'unf_ext', '~> 0.0.7.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
