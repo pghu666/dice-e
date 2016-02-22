@@ -17,7 +17,10 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass'
 
 #Use stripe for ecommerce payments
-gem 'stripe', '~> 1.36'
+gem 'stripe'
+
+#Firago gem for security management credentials
+gem 'figaro'
 
 gem 'unf_ext', '~> 0.0.7.2'
 

@@ -1,11 +1,11 @@
 <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
-            <h1 id="article-title">Growth Hacking <span class="font-weight-light">Crash Course</span></h1>
-            <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal">Mattan Griffel</a></small></h3>
+            <h1 id="article-title">Crazy Joureny <span class="font-weight-light">Crash Crash Item!</span></h1>
+            <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal">Ryo Asai</a></small></h3>
 
             <p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
 
-            <p>In this talk, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
+            <p>In this talk, Ryo Asai introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
             <p><strong>What You'll Learn</strong></p>
             <ul class="no-indent">
                 <li>What is a growth hacker?</li>
@@ -16,6 +16,28 @@
         </article>
         <aside id="details-aside" class="col-sm-4">
             <a id="btn-buy" href="receipt.html" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</a>
+
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Amount: $32.00</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="500"
+          data-locale="auto"></script>
+<% end %>
+
+
+
             <ul id="details-infobox" class="list-group">
               <li class="list-group-item active clearfix">DETAILS</li>
               <li class="list-group-item">You'll get one video</li>
@@ -43,8 +65,9 @@ Made by <a href="http://onemonth.com" target="_blank">
       </div>
       <div class="modal-body clearfix">
             <div id="modal-left" class="pull-left">
-                <p><strong>Mattan Griffel</strong></p>
-                <p>Hey, I'm Mattan Griffel, co-founder of the Y Combinator backed <a href="http://www.onemonth.com" target="_blank">One Month</a> where I teach the best selling One Month Rails and One Month Growth Hacking.</p>
+                <p><strong>Ryo Asai</strong></p>
+                <p>Hey, I'm Ryo Asai, co-founder of the Dicefleet
+                 <a href="http://www.onemonth.com" target="_blank">One Month</a> where I teach the best selling One Month Rails and One Month Growth Hacking.</p>
                 <p>Why take my class? In the past I've advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best practices. I've also spoken at New York University, Cooper Union and First Round Capital. My goal is to help you and other entrepreneurs rapidly grow your business. 
                 </p>
                 <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>
