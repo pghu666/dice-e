@@ -22,6 +22,9 @@ gem 'stripe'
 #Firago gem for security management credentials
 gem 'figaro'
 
+#handling email in development 
+gem 'letter_opener', group: :development
+
 gem 'unf_ext', '~> 0.0.7.2'
 
 # Use SCSS for stylesheets
