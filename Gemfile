@@ -25,6 +25,11 @@ gem 'figaro'
 #handling email in development 
 gem 'letter_opener', group: :development
 
+#add active admin
+gem 'activeadmin', github: 'ryo0131asai/activeadmin'
+#add devise for admin
+gem 'devise'
+
 gem 'unf_ext', '~> 0.0.7.2'
 
 # Use SCSS for stylesheets
